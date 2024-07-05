@@ -145,7 +145,10 @@ log_info("TIMEZONE synced with logging status")
 GDRIVE_ID = environ.get('GDRIVE_ID', '')
 if len(GDRIVE_ID) == 0:
     GDRIVE_ID = ''
-
+METADATA_KEY = environ.get('METADATA_KEY', '')
+if len(METADATA_KEY) == 0:
+    METADATA_KEY = ''
+            
 RCLONE_PATH = environ.get('RCLONE_PATH', '')
 if len(RCLONE_PATH) == 0:
     RCLONE_PATH = ''
