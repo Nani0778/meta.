@@ -533,3 +533,50 @@ default_desp = {'AS_DOCUMENT': 'Default type of Telegram file upload. Default is
                 'WEB_PINCODE': ' Whether to ask for pincode before selecting files from torrent in web or not. Default is False. Bool.',
                 'YT_DLP_OPTIONS': 'Default yt-dlp options. Check all possible options HERE or use this script to convert cli arguments to api options. Format: key:value|key:value|key:value. Add ^ before integer or float, some numbers must be numeric and some string. \nExample: "format:bv*+mergeall[vcodec=none]|nocheckcertificate:True"'
                 }
+
+uset_display_dict = {
+    'rcc': [
+        'RClone is a command-line program to sync files and directories to and from different cloud storage providers like GDrive, OneDrive...', 
+        'Send rclone.conf. Timeout: 60 sec'
+    ],
+    'prefix': [
+        'Filename Prefix is the front part attached to the filename of the leech files.', 
+        'Send filename prefix. Timeout: 60 sec'
+    ],
+    'suffix': [
+        'Filename Suffix is the end part attached to the filename of the leech files.', 
+        'Send filename suffix. Timeout: 60 sec'
+    ],
+    'remname': [
+        'Filename Remname is a combination of regex patterns used for removing or manipulating the filename of the leech files.', 
+        'Send filename remname. Timeout: 60 sec'
+    ],
+    'metadata': [
+        'Metadata will change MKV video files including all audio, streams, and subtitle titles.', 
+        'Send metadata title. Timeout: 60 sec'
+    ],
+    'attachment': [
+        'Attachment url, it will added in mkv as thumbnail or cover photo, whetever you say.',
+        'Send raw photo url, example from imgbb.com . Timeout: 60 sec'
+    ],
+    'lcaption': [
+        'Leech Caption is the custom caption on the leech files uploaded by the bot.', 
+        'Send leech caption. You can add HTML tags. Timeout: 60 sec'
+    ],
+    'ldump': [
+        'Leech Files User Dump for personal use as a storage.', 
+        'Send leech dump channel ID. Timeout: 60 sec'
+    ],
+    'thumb': [
+        'Custom thumbnail to appear on the leeched files uploaded by the bot.', 
+        'Send a photo to save it as a custom thumbnail. Timeout: 60 sec'
+    ],
+    'yt_opt': [
+        'YT-DLP Options are the custom quality settings for the extraction of videos from yt-dlp supported sites.', 
+        'Send YT-DLP options. Timeout: 60 sec\nFormat: key:value|key:value|key:value.\nExample: format:bv*+mergeall[vcodec=none]|nocheckcertificate:True\nCheck all yt-dlp API options from this <a href="https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/YoutubeDL.py#L184">file</a> or use this <a href="https://t.me/mltb_official_channel/177">script</a> to convert CLI arguments to API options.'
+    ],
+    'user_tds': [
+        f'UserTD helps to upload files via the bot to your custom drive destination through global SA mail.\n\n<b>SA Mail:</b> {SA if (SA := GROUPS_EMAIL) else "Not Specified"}', 
+        'Send User TD details for use while mirroring/cloning.\n<b>Format:</b>\nname drive_id/link index (optional)\n\n<b>NOTE:</b>\n1. You must add our SA mail to your drive with write permission.\n2. Names can have spaces.\n3. Drive ID must be valid for acceptance.\n\n<b>Timeout:</b> 60 sec.'
+    ],
+}
