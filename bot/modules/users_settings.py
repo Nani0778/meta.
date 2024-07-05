@@ -54,6 +54,8 @@ fname_dict = {'rcc': 'RClone',
              'ldump': 'User Dump',
              'lcaption': 'Caption',
              'thumb': 'Thumbnail',
+             'metadata': 'Metadata',
+             'attachment': 'Attachment',
              'yt_opt': 'YT-DLP Options',
              'usess': 'User Session',
              'split_size': 'Leech Splits',
@@ -625,7 +627,7 @@ async def edit_user_settings(client, query):
         await update_user_settings(query, data[2][1:], 'leech')
         if DATABASE_URL:
             await DbManger().update_user_data(user_id)
-    elif data[2] in ['dmprefix', 'dmsuffix', 'dmremname', 'duser_tds']:
+    elif data[2] in ['dmprefix', 'dmsuffix', 'dmremname', 'dmetadata','dattachment' ,'duser_tds']:
         handler_dict[user_id] = False
         await query.answer()
         update_user_ldata(user_id, data[2][1:], {} if data[2] == 'duser_tds' else '')
