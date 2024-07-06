@@ -14,7 +14,7 @@ jobs:
       uses: aptible/aptible-deploy-action@v4
       with:
         type: git
-        app: nanileechbot
-        environment: nanibots
+        app: nanileech
+        environment: naniooo
         username: ${{ secrets.APTIBLE_USERNAME }}
         password: ${{ secrets.APTIBLE_PASSWORD }}
